@@ -1,0 +1,9 @@
+{
+  "name": "jquery-radionomy",
+  "version": "1.0.0",
+  "description": "A jQuery radionomy plugin, which support responsive breakpoints",
+  "main": "./jquery.radionomy.js",
+  "dependencies": {
+    "jquery": ">=1.8"
+  }
+}
