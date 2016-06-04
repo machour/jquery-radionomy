@@ -20,6 +20,8 @@
             referer: document.referrer
         }, options);
 
+        var originalType = queryParams.type;
+
         breakpoints = breakpoints || {};
 
         var url = getSrc(queryParams);
@@ -33,7 +35,7 @@
         if (!$.isEmptyObject(breakpoints)) {
             $(window).resize(function () {
                 var cWidth = document.body.clientWidth;
-                var type = queryParams.type;
+                var type = originalType;
                 for (var bp in breakpoints) {
                     console.log("bp: " + bp + " / " + cWidth);
                     if (cWidth <= bp) {
